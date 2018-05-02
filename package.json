@@ -1,0 +1,32 @@
+{
+  "name": "rtm-client",
+  "version": "0.0.1",
+  "description": "SocketIO client server for connecting to the YellowAnt RTM server",
+  "private": true,
+  "repository": "https://www.yellowant.com/",
+  "author": "Manik Singh <manik@yellowant.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec babel-node --presets env ./src/index.js",
+    "build": "rollup -c",
+    "server": "node ./dist/main.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2",
+    "socket.io-client": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "nodemon": "^1.17.3",
+    "rollup": "^0.58.2",
+    "rollup-plugin-babel": "^3.0.4",
+    "rollup-plugin-node-resolve": "^3.3.0"
+  }
+}
