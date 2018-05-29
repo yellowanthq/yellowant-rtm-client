@@ -1,6 +1,5 @@
 /** A client for YellowAnt RTM to relay YellowAnt commands from websocket to the http application */
 const express = require("express");
-const request = require("request-promise");
 
 import RTMClient from "./RTMClient.js";
 

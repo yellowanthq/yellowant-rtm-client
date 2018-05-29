@@ -1,5 +1,6 @@
 /** RTM Client class for connecting to the YellowAnt RTM server */
 const socketio = require("socket.io-client");
+const request = require("request-promise");
 
 import events from "./events";
 
