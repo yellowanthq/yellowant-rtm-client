@@ -13,7 +13,7 @@ const postOptions = {
 };
 
 class RTMClient {
-  constructor(CLIENT_ID, RTM_TOKEN, RTM_SERVER_URL="") {
+  constructor(CLIENT_ID, RTM_TOKEN, RTM_SERVER_URL="http://production-rtm-dev.us-east-1.elasticbeanstalk.com:5000/") {
     // inline rtm_token and client_id of application as GET params in the server uri
     const URL = RTM_SERVER_URL + "?rtm_token=" + RTM_TOKEN + "&client_id=" + CLIENT_ID;
 
