@@ -16,7 +16,6 @@ class RTMClient {
   constructor(CLIENT_ID, RTM_TOKEN, RTM_SERVER_URL="http://production-rtm-dev.us-east-1.elasticbeanstalk.com:5000/") {
     // inline rtm_token and client_id of application as GET params in the server uri
     const URL = RTM_SERVER_URL + "?rtm_token=" + RTM_TOKEN + "&client_id=" + CLIENT_ID;
-
     // connect to RTM server
     this.socketIOClient = socketio(URL);
 
@@ -28,8 +27,6 @@ class RTMClient {
   }
 
   bindClientEvents() {
-    this.socketIOClient.on("connection", () => {console.log("woohoo")});
-
     // handle YellowAnt commands on socketio event: "yellowant_command"
     this.socketIOClient.on(events.YELLOWANT_COMMAND, (eventData) => {
       // eventData JSON contains two keys,
