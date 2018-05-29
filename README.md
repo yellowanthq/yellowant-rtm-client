@@ -23,10 +23,22 @@ npm install
 
 ## Run the RTM client app in development
 
-`APPLICATION_API_URL="YOUR_APP_API_URL_WHICH_RECEIVES_YELLOWANT_COMMANDS" CLIENT_ID="YOUR_APP_CLIENT_ID" RTM_TOKEN="YOUR_APP_RTM_TOKEN" npm run server`
+Set the following environment variables:
+1. `APPLICATION_API_URL` # YOUR_APP_API_URL_WHICH_RECEIVES_YELLOWANT_COMMANDS
+2. `CLIENT_ID` # YOUR_APP_CLIENT_ID
+3. `RTM_TOKEN` # YOUR_APP_RTM_TOKEN
+
+Run the command:
+`npm run server`
 
 ## Run the RTM client app in production
 
+Set the following environment variables:
+1. `APPLICATION_API_URL` # YOUR_APP_API_URL_WHICH_RECEIVES_YELLOWANT_COMMANDS
+2. `CLIENT_ID` # YOUR_APP_CLIENT_ID
+3. `RTM_TOKEN` # YOUR_APP_RTM_TOKEN
+
+Run the commands:
 `npm run build`
-`APPLICATION_API_URL="YOUR_APP_API_URL_WHICH_RECEIVES_YELLOWANT_COMMANDS" CLIENT_ID="YOUR_APP_CLIENT_ID" RTM_TOKEN="YOUR_APP_RTM_TOKEN" npm start`
+`npm start`
 
